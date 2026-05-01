@@ -1,0 +1,4 @@
+interface:
+  display_name: "AICR Production Hardening"
+  short_description: "Harden the service for deployment and operations."
+  default_prompt: "Use $aicr-production-hardening to improve reliability, safety, and operability."

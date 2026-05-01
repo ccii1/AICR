@@ -1,0 +1,4 @@
+interface:
+  display_name: "AICR Local RAG Ops"
+  short_description: "Maintain and refresh the local RAG index."
+  default_prompt: "Use $aicr-local-rag-ops to inspect, ingest, or refresh the local vector store."

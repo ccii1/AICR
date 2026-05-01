@@ -1,0 +1,4 @@
+interface:
+  display_name: "AICR GitLab Review"
+  short_description: "Process GitLab webhook review events consistently."
+  default_prompt: "Use $aicr-gitlab-webhook-review to turn a GitLab webhook payload into a review run."

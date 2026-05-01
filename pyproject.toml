@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aicr"
+version = "0.1.0"
+description = "AICR demo project integrating RAG, KG, Agent, MCP, and Skills."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "AICR Team" }]
+dependencies = []
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "AICR Release Readiness"
+  short_description: "Check release blockers before shipping changes."
+  default_prompt: "Use $aicr-release-readiness to run a focused pre-release readiness pass."
