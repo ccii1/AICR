@@ -31,7 +31,17 @@ def main() -> None:
     skills.register("budget_estimator", lambda q: f"预算估算: 请求 `{q}` 建议 150k token/天")
 
     agent = AICRAgent(rag=rag, kg=kg, mcp=mcp, skills=skills)
-    result = agent.run("申请 LLM token 使用计划")
+    review_files = [
+        "services/reviewer/main.go",
+        "backend/graph/index.py",
+        "core/runtime/agent.cpp",
+        "platform/audit/PolicyCheck.java",
+    ]
+    result = agent.run(
+        "申请 LLM token 使用计划并完成review",
+        review_files=review_files,
+        validation_level="p0",
+    )
     print(result)
 
 
